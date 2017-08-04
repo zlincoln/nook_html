@@ -17,9 +17,7 @@
   },
   "homepage": "https://github.com/zlincoln/nook_html#readme",
   "dependencies": {
-    "bootstrap": "^3.3.7",
-    "grunt": "^1.0.1",
-    "grunt-cli": "^1.2.0"
+    "grunt": "^1.0.1"
   },
   "devDependencies": {
     "grunt-contrib-less": "^1.4.1",
