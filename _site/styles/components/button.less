@@ -1,0 +1,26 @@
+.btn-square-more {
+  @size: 146px;
+  @font-size: 24px;
+  height: @size;
+  width: @size;
+  border: 2px solid @red-orange;
+  color: @red-orange;
+  text-align: left;
+  font-size: unit(@font-size/@font-size-base, em);
+  line-height: unit(32/@font-size);
+  font-weight: @font-weight-bold;
+  text-transform: uppercase;
+  white-space: normal;
+  margin: 80px 0;
+
+  .icon {
+    display: block;
+    font-weight: normal;
+    font-size: unit((@font-size + 12)/@font-size, em);
+    margin-bottom: 2px;
+  }
+
+  &:hover, &:focus, &:active {
+    background: transparent;
+  }
+}
