@@ -12,5 +12,32 @@ layout: default
         <p class="lead">Lorem ipsum dolor sit amet, consectetur adipisicing elit. A, cumque cupiditate, debitis eius error expedita in ipsa laboriosam magnam mollitia necessitatibus omnis quasi reprehenderit repudiandae sapiente sed sunt unde ut!</p>
         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci asperiores, consectetur dicta molestias necessitatibus numquam quam ratione rerum. Animi eum itaque laborum nostrum pariatur reprehenderit sint. Eaque eum inventore sunt?</p>
         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. A corporis, odit pariatur quam quia quisquam. Accusantium ad beatae blanditiis consequatur, deleniti ipsam nesciunt non quam quos saepe similique tempore ullam!</p>
+        {% include article/image-left-jumbo.html %}
+        <div class="row">
+            <div class="col-xs-3">
+                {% include article/recommended.html %}
+            </div>
+            <div class="col-xs-3">
+                {% include article/recommended.html %}
+            </div>
+            <div class="col-xs-3">
+                {% include article/recommended.html %}
+            </div>
+            <div class="col-xs-3">
+                {% include article/recommended.html %}
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-xs-4">
+                {% include article/stacked.html %}
+            </div>
+            <div class="col-xs-4">
+                {% include article/stacked.html %}
+            </div>
+            <div class="col-xs-4">
+                {% include article/stacked.html %}
+            </div>
+        </div>
+        {% include article/stacked-jumbo.html %}
     </div>
 </main>

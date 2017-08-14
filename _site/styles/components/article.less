@@ -1,0 +1,27 @@
+.article-title {
+  @font-size: 26px;
+  padding-bottom: 9px;
+  border-bottom: 2px solid black;
+  font-size: unit(@font-size/@font-size-base, em);
+  line-height: unit(34/@font-size);
+  font-weight: @font-weight-semibold;
+  margin: 0 0 15px;
+
+  .article-tag {
+    display: block;
+  }
+
+  a {
+    color: @text-color;
+  }
+
+  &.article-title-inline {
+    display: inline-block;
+  }
+}
+
+.article-excerpt {
+  @font-size: 16px;
+  font-size: unit(@font-size/@font-size-base, em);
+  line-height: unit(26/@font-size);
+}
