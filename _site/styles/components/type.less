@@ -12,3 +12,13 @@
     text-transform: uppercase;
   }
 }
+
+blockquote {
+  @font-size: 19px;
+  font-size: unit(@font-size/@font-size-base, em);
+  line-height: unit(30/@font-size);
+  font-weight: @font-weight-semibold;
+  margin-bottom: 60px;
+  border-left: 2px solid black;
+  padding: 0 0 0 36px;
+}

@@ -1,0 +1,22 @@
+.nav-social {
+  @font-size: 28px;
+  font-size: unit(@font-size/@font-size-base, em);
+
+  > li > a {
+    color: @cool-gray;
+    text-align: center;
+
+    &:hover, &:focus, &:active {
+      background: transparent;
+      color: @text-color;
+    }
+  }
+
+  .icon-facebook {
+    font-size: unit(30/@font-size, em);
+  }
+
+  .icon-email {
+    font-size: unit(22/@font-size, em);
+  }
+}

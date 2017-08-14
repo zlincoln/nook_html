@@ -25,3 +25,19 @@
   font-size: unit(@font-size/@font-size-base, em);
   line-height: unit(26/@font-size);
 }
+
+.article {
+  .col-description {
+    p {
+      @font-size: 16px;
+      font-size: unit(@font-size/@font-size-base, em);
+      line-height: unit(26/@font-size);
+    }
+  }
+}
+
+.article-stacked {
+  img  {
+    margin-bottom: 24px;
+  }
+}
