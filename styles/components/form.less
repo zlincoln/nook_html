@@ -1,0 +1,35 @@
+::-webkit-input-placeholder {
+  font-style: italic;
+}
+
+.form-email-capture {
+  padding: 78px 0;
+  border: 1px solid @whispy-gray;
+  border-width: 1px 0;
+
+  h2 {
+    @font-size: 26px;
+    font-size: unit(@font-size/@font-size-base, em);
+    line-height: unit(34/@font-size);
+    font-weight: @font-weight-semibold;
+    margin: 0 0 10px;
+  }
+
+  label {
+    @font-size: 16px;
+    font-size: unit(@font-size/@font-size-base, em);
+    line-height: unit(26/@font-size);
+    font-weight: @font-weight-book;
+    margin: 0 0 20px;
+  }
+
+  input, .btn {
+    border: 2px solid black;
+    height: 50px;
+  }
+
+  .btn {
+    border-width: 2px 2px 2px 1px;
+    font-weight: bold;
+  }
+}
