@@ -61,6 +61,10 @@
 }
 
 #primary-nav {
+  > li > a {
+    font-weight: @font-weight-semibold;
+  }
+
   @media (min-width: @grid-float-breakpoint) {
     @font-size: 12px;
     @padding: 10px;
@@ -71,7 +75,6 @@
       padding-right: @padding;
       font-size: unit(@font-size/@font-size-base, em);
       line-height: unit(13/@font-size);
-      font-weight: @font-weight-semibold;
     }
   }
 }

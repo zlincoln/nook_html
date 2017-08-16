@@ -1,3 +1,19 @@
+.navbar-toggle {
+  .visible-collapsed {
+    display: none;
+  }
+
+  &.collapsed {
+    .visible-collapsed {
+      display: block;
+    }
+
+    .hidden-collapsed {
+      display: none;
+    }
+  }
+}
+
 .navbar-social {
   @font-size: 16px;
   font-size: unit(@font-size/@font-size-base, em);
