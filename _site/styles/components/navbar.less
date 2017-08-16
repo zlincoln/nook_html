@@ -20,17 +20,49 @@
 
 .navbar-legal {
   @font-size: 14px;
+  @line-height: 16px;
   font-size: unit(@font-size/@font-size-base, em);
-  line-height: unit(16/@font-size);
+  line-height: unit(@line-height/@font-size);
   color: @muted-gray;
 
   > li > a {
     color: @muted-gray;
-    line-height: unit(16/@font-size);
+    line-height: unit(@line-height/@font-size);
   }
 }
 
 #top-nav .navbar {
+  @media (max-width: @grid-float-breakpoint-max) {
+    @button-height: 34px;
+    @navbar-height: 18px * 3;
+    min-height: 0;
+    text-align: center;
+
+    .navbar-toggle {
+      float: left;
+      margin-top: ((@navbar-height - @button-height) / 2);
+      margin-bottom: ((@navbar-height - @button-height) / 2);
+    }
+
+    .navbar-brand {
+      display: inline-block;
+      float: none;
+      padding-top: @navbar-height / 3 ;
+      padding-bottom: @navbar-height / 3;
+      height: @navbar-height;
+
+      img {
+        max-height: 100%;
+      }
+    }
+
+    .navbar-header .navbar-btn {
+      float: right;
+      margin-top: ((@navbar-height - @button-height) / 2);
+      margin-bottom: ((@navbar-height - @button-height) / 2);
+    }
+  }
+
   @media (min-width: @grid-float-breakpoint) {
     padding-top: 30px;
     padding-bottom: 20px;
