@@ -43,34 +43,35 @@
   }
 }
 
-.navbar-social {
-  @font-size: 16px;
-  font-size: unit(@font-size/@font-size-base, em);
-  line-height: unit(21/@font-size);
-  text-transform: uppercase;
-  letter-spacing: 1px;
-  font-weight: @font-weight-bold;
-  margin-bottom: 30px;
+#trove-nav {
+  @media (min-width: @grid-float-breakpoint) {
+    padding-top: 6px;
 
-  > li > a {
-    color: @text-color;
-
-    .icon {
-      font-size: unit((@font-size + 8)/@font-size, em);
+    > li > a {
+      line-height: 20px;
       position: relative;
-      top: -2px;
+      bottom: -4px;
+
+      .icon {
+        line-height: 20px;
+        font-size: unit(20px/@font-size-base, em);
+      }
     }
   }
 }
 
-.navbar-legal {
-  @font-size: 14px;
-  font-size: unit(@font-size/@font-size-base, em);
-  line-height: unit(16/@font-size);
-  color: @muted-gray;
+#primary-nav {
+  @media (min-width: @grid-float-breakpoint) {
+    @font-size: 12px;
+    @padding: 10px;
+    padding-top: 17px;
 
-  > li > a {
-    color: @muted-gray;
-    line-height: unit(16/@font-size);
+    > li > a {
+      padding-left: @padding;
+      padding-right: @padding;
+      font-size: unit(@font-size/@font-size-base, em);
+      line-height: unit(13/@font-size);
+      font-weight: @font-weight-semibold;
+    }
   }
 }

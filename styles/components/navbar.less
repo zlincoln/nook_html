@@ -1,0 +1,45 @@
+.navbar-social {
+  @font-size: 16px;
+  font-size: unit(@font-size/@font-size-base, em);
+  line-height: unit(21/@font-size);
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  font-weight: @font-weight-bold;
+  margin-bottom: 30px;
+
+  > li > a {
+    color: @text-color;
+
+    .icon {
+      font-size: unit((@font-size + 8)/@font-size, em);
+      position: relative;
+      top: -2px;
+    }
+  }
+}
+
+.navbar-legal {
+  @font-size: 14px;
+  font-size: unit(@font-size/@font-size-base, em);
+  line-height: unit(16/@font-size);
+  color: @muted-gray;
+
+  > li > a {
+    color: @muted-gray;
+    line-height: unit(16/@font-size);
+  }
+}
+
+#top-nav .navbar {
+  @media (min-width: @grid-float-breakpoint) {
+    padding-top: 30px;
+    padding-bottom: 20px;
+    border: none;
+    border-radius: 0;
+
+    .navbar-nav > li > a {
+      padding-top: 0;
+      padding-bottom: 0;
+    }
+  }
+}
