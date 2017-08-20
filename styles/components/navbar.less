@@ -1,3 +1,27 @@
+.navbar {
+  [class*="visible-after-nav-breakpoint"] {
+    display: none;
+  }
+
+  @media (min-width: @grid-float-breakpoint) {
+    .visible-after-nav-breakpoint {
+      display: block;
+
+      &-inline {
+        display: inline;
+      }
+
+      &-inline-block {
+        display: inline-block;
+      }
+    }
+
+    [class*="visible-before-nav-breakpoint"] {
+      display: none !important;
+    }
+  }
+}
+
 .navbar-toggle {
   .visible-collapsed {
     display: none;
@@ -49,15 +73,20 @@
 
 #top-nav .navbar {
   @media (max-width: @grid-float-breakpoint-max) {
+    position: fixed;
     @button-height: 34px;
     @navbar-height: 18px * 3;
     min-height: 0;
     text-align: center;
+    width: 100vw;
+    background: @body-bg;
+    z-index: 2048;
 
     .navbar-toggle {
       float: left;
       margin-top: ((@navbar-height - @button-height) / 2);
       margin-bottom: ((@navbar-height - @button-height) / 2);
+      border: none;
     }
 
     .navbar-brand {
@@ -76,6 +105,14 @@
       float: right;
       margin-top: ((@navbar-height - @button-height) / 2);
       margin-bottom: ((@navbar-height - @button-height) / 2);
+    }
+
+    .navbar-collapse {
+      position: absolute;
+      top: 100%;
+      height: ~"calc(100vh - @{navbar-height})";
+      width: 100vw;
+      background: @body-bg;
     }
   }
 

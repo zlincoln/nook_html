@@ -13,6 +13,7 @@
   white-space: normal;
   margin: 80px 0;
   letter-spacing: 1px;
+  border-radius: 0;
 
   .icon {
     display: block;
@@ -24,4 +25,14 @@
   &:hover, &:focus, &:active {
     background: transparent;
   }
+}
+
+.btn-link-chevron {
+  @font-size: 16px;
+  font-size: unit(@font-size/@font-size-base, em);
+  line-height: unit(21/@font-size);
+  font-weight: bold;
+  color: @gold;
+  text-transform: uppercase;
+  letter-spacing: 1px;
 }

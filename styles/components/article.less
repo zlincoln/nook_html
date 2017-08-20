@@ -37,6 +37,14 @@
 }
 
 .article-stacked {
+  &:not(.article-jumbo):not(.article-half) {
+    .article-title {
+      @font-size: 17px;
+      font-size: unit(@font-size/@font-size-base, em);
+      line-height: unit(22/@font-size);
+    }
+  }
+
   img  {
     margin-bottom: 24px;
   }

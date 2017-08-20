@@ -22,7 +22,7 @@
                     <a class="navbar-brand" href="/">
                         <img src="/images/thenook-logo.svg">
                     </a>
-                    <a href="#" class="visible-xs-inline-block visible-sm-inline-block btn btn-link navbar-btn">
+                    <a href="#" class="visible-before-nav-breakpoint-inline-block btn btn-link navbar-btn">
                         <span class="icon icon-trove-truck"></span>
                     </a>
                 </div>
@@ -34,14 +34,14 @@
                         <li><a href="#">Interiors</a></li>
                         <li><a href="#">Tips</a></li>
                     </ul>
-                    <ul id="trove-nav" class="nav navbar-nav navbar-right hidden-xs hidden-sm">
+                    <ul id="trove-nav" class="nav navbar-nav navbar-right visible-after-nav-breakpoint">
                         <li><a href="#"><span class="icon icon-trove-truck"></span></a></li>
                     </ul>
                 </div>
             </div>
         </div>
     </nav>
-    <main>
+    <main id="home">
     <section class="container">
         <h1 class="sr-only">the nook &middot; presented by Trove</h1>
         <article>
@@ -129,7 +129,7 @@
             </div>
         </div>
         <h2 id="videos" class="h3"><a href="#" class="btn btn-link btn-link-chevron">Videos</a></h2>
-        <article class="article article-stacked">
+        <article class="article article-stacked article-jumbo">
     <img src="http://placehold.it/2000x1000" class="img-responsive">
     <p class="tags">
         <a href="#">Interviews</a>
@@ -213,7 +213,7 @@
         <h2 id="interiors" class="h3"><a href="#" class="btn btn-link btn-link-chevron">Interiors</a></h2>
         <div class="row">
             <div class="col-xs-6">
-                <article class="article article-stacked">
+                <article class="article article-stacked article-half">
                     <img src="http://placehold.it/920" class="img-responsive">
                     <p class="tags">
                         <a href="#">Culture</a>
@@ -229,7 +229,7 @@
                 </article>
             </div>
             <div class="col-xs-6">
-                <article class="article article-stacked">
+                <article class="article article-stacked article-half">
                     <img src="http://placehold.it/920" class="img-responsive">
                     <p class="tags">
                         <a href="#">Culture</a>
