@@ -1,0 +1,38 @@
+.aside-recommended-stories {
+  .inner {
+    padding: 48px 0;
+    border: 1px solid @whispy-gray;
+    border-width: 1px 0;
+  }
+
+  .aside-heading {
+    @font-size: 16px;
+    @padding-bottom: 70px;
+    text-align: center;
+    font-size: unit(@font-size/@font-size-base, em);
+    line-height: unit(21/@font-size);
+    margin: 0;
+    padding-bottom: @padding-bottom;
+    position: relative;
+    font-weight: @font-weight-bold;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+
+    &:after {
+      content: ' ';
+      position: absolute;
+      bottom: @padding-bottom / 2;
+      left: 50%;
+      .translate(-50%, -50%);
+      height: 5px;
+      width: 50px;
+      background-color: @red-orange;
+    }
+  }
+
+  &:last-child {
+    .inner {
+      border-bottom: none;
+    }
+  }
+}

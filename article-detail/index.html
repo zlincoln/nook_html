@@ -2,9 +2,9 @@
 layout: default
 ---
 
-<main id="article-detail">
+<main id="article-detail" class="portrait">
     <article class="container">
-        <header class="row">
+        <header class="row row-flex">
             <div class="col-xs-6">
                 <h1 class="article-title">
                     <a href="#">
@@ -28,10 +28,12 @@ layout: default
                 </ul>
             </div>
             <div class="col-xs-8">
-                <blockquote>
-                    You love having a second home but the mortgage is putting a crater in your wallet. Many second home owners turn to renting their property as a vacation rental to help defray the costs of ownership. How do you price a vacation home rental without overcharging but making enough to cover your costs? Do your research.
-                </blockquote>
-                <p>Find out what other owners of, similar sized homes in the area are charging. You can ask a local real estate agent for a price range, scan local papers or go online. There are also vacation rental sites like eVaca.com. These types of sites have advertisements from owners around the world and weekly rates for the properties are listed.</p>
+                <section>
+                    <blockquote>
+                        You love having a second home but the mortgage is putting a crater in your wallet. Many second home owners turn to renting their property as a vacation rental to help defray the costs of ownership. How do you price a vacation home rental without overcharging but making enough to cover your costs? Do your research.
+                    </blockquote>
+                    <p>Find out what other owners of, similar sized homes in the area are charging. You can ask a local real estate agent for a price range, scan local papers or go online. There are also vacation rental sites like eVaca.com. These types of sites have advertisements from owners around the world and weekly rates for the properties are listed.</p>
+                </section>
                 <figure>
                     <div class="row">
                         <div class="col-xs-6">
@@ -43,12 +45,14 @@ layout: default
                     </div>
                     <p class="caption help-block"><strong>Her favorite books by the bedside</strong> <em>Photo: Irene Kim</em></p>
                 </figure>
-                <h2 class="h3">Creativity is Medicine</h2>
-                <p>The time of year you rent out a property is important as well. If you want to rent out a ski lodge in Vermont, August is not going to be your “high time” of year, but January will. If you are going to rent the property in an “off” time of year you will not be able to charge as much as if you were renting the property in a peak time.</p>
-                <blockquote>
-                    "However, that same property in January you might only attract the snowbirds who want to rent at a lower price and rent it out on a monthly basis."
-                    <footer>Iva Barnes</footer>
-                </blockquote>
+                <section>
+                    <h2 class="h3">Creativity is Medicine</h2>
+                    <p>The time of year you rent out a property is important as well. If you want to rent out a ski lodge in Vermont, August is not going to be your “high time” of year, but January will. If you are going to rent the property in an “off” time of year you will not be able to charge as much as if you were renting the property in a peak time.</p>
+                    <blockquote class="blockquote-centered">
+                        "However, that same property in January you might only attract the snowbirds who want to rent at a lower price and rent it out on a monthly basis."
+                        <footer>Iva Barnes</footer>
+                    </blockquote>
+                </section>
             </div>
         </div>
         <figure>
@@ -59,51 +63,14 @@ layout: default
                 </div>
             </div>
         </figure>
-        <div class="row">
+        <section class="row">
             <div class="col-xs-8 col-xs-offset-2">
                 <h2 class="h3">Nine Features of an Advertising Flop</h2>
                 <p>Figure out how many weeks you need to rent your property in order to make a profit or at least pay the bills. Say you need to make $12000 a year in rental income. If, after looking at other rentals, a rate of maybe $1,000 a week seems reasonable than you know you need to rent the property out for at least 12 weeks a year. But you might have to rent for a few more weeks at a lower rate to make up for “off peak” times of the year or if you do not get someone to fill every vacant period.</p>
                 <p>Most important, do not forget to spend time in your own vacation home. Owning the property and not being able to enjoy it defeats the purpose of having that second home!</p>
             </div>
-        </div>
-        <footer>
-            <div class="row">
-                <div class="col-xs-8 col-xs-offset-2">
-                    <p>Filed under</p>
-                    <p class="tags"><a href="#" class="badge">Interiors</a> <a href="#" class="badge">Interviews</a></p>
-                    <div class="row">
-                        <div class="col-xs-2">
-                            <small>Words by Ben Fisher</small>
-                        </div>
-                        <div class="col-xs-2">
-                            <small>Photography by Irene Kim</small>
-                        </div>
-                        <div class="col-xs-2">
-                            <small>Published on June 14, 2017</small>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </footer>
+        </section>
+        {% include article/footer.html %}
     </article>
-    <aside class="container">
-        <h2 class="h4 text-center">Recommended Stories</h2>
-        <div class="row">
-            <div class="col-xs-3">
-                {% include article/recommended.html %}
-            </div>
-            <div class="col-xs-3">
-                {% include article/recommended.html %}
-            </div>
-            <div class="col-xs-3">
-                {% include article/recommended.html %}
-            </div>
-            <div class="col-xs-3">
-                {% include article/recommended.html %}
-            </div>
-        </div>
-    </aside>
-    <section class="container">
-        {% include form-email-capture.html %}
-    </section>
+    {% include recommended-stories.html %}
 </main>

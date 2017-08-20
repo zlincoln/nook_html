@@ -49,3 +49,20 @@
     margin-bottom: 24px;
   }
 }
+
+.article-recommended {
+  img {
+    margin-bottom: 13px;
+  }
+
+  p {
+    @font-size: 17px;
+    font-weight: @font-weight-bold;
+    font-size: unit(@font-size/@font-size-base, em);
+    line-height: unit(22/@font-size);
+
+    a {
+      color: @text-color;
+    }
+  }
+}

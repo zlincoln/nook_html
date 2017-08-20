@@ -1,0 +1,13 @@
+figure {
+  .caption {
+    @font-size: 15px;
+    margin-top: 12px;
+    font-size: unit(@font-size/@font-size-base, em);
+    line-height: unit(26/@font-size);
+
+    em {
+      margin-left: 20px;
+      font-size: unit(12/@font-size, em);
+    }
+  }
+}

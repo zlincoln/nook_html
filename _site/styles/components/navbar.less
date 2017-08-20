@@ -74,19 +74,28 @@
 #top-nav .navbar {
   @media (max-width: @grid-float-breakpoint-max) {
     position: fixed;
+    top: 0;
     @button-height: 34px;
-    @navbar-height: 18px * 3;
+    @navbar-height: @navbar-height-mobile;
     min-height: 0;
+    max-height: @navbar-height;
     text-align: center;
-    width: 100vw;
+    width: 100%;
     background: @body-bg;
-    z-index: 2048;
+
+    .navbar-toggle, .navbar-header .navbar-btn {
+      @font-size: 20px;
+      font-size: unit(@font-size/@font-size-base, em);
+      line-height: 1;
+      padding: ((@button-height - @font-size) / 2) @grid-gutter-width / 2;
+      border: none;
+      margin: ((@navbar-height - @navbar-height) / 2) 0;
+    }
 
     .navbar-toggle {
       float: left;
       margin-top: ((@navbar-height - @button-height) / 2);
       margin-bottom: ((@navbar-height - @button-height) / 2);
-      border: none;
     }
 
     .navbar-brand {
@@ -105,14 +114,19 @@
       float: right;
       margin-top: ((@navbar-height - @button-height) / 2);
       margin-bottom: ((@navbar-height - @button-height) / 2);
+      font-size: unit(18/@font-size-base, em);
     }
 
     .navbar-collapse {
       position: absolute;
       top: 100%;
-      height: ~"calc(100vh - @{navbar-height})";
-      width: 100vw;
+      width: 100%;
       background: @body-bg;
+      height: ~"calc(100vh - @{navbar-height})";
+
+      #primary-nav {
+        margin: 0;
+      }
     }
   }
 
