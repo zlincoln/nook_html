@@ -28,11 +28,17 @@
 }
 
 .btn-link-chevron {
-  @font-size: 16px;
+  @font-size: 12px;
   font-size: unit(@font-size/@font-size-base, em);
-  line-height: unit(21/@font-size);
+  line-height: unit(15/@font-size);
   font-weight: bold;
   color: @gold;
   text-transform: uppercase;
   letter-spacing: 1px;
+
+  @media (min-width: @layout-breakpoint) {
+    @font-size: 16px;
+    font-size: unit(@font-size/@font-size-base, em);
+    line-height: unit(21/@font-size);
+  }
 }

@@ -19,7 +19,7 @@
     display: block;
   }
 
-  @media (min-width: @layout-breakpoint-max) {
+  @media (min-width: @layout-breakpoint) {
     @font-size: 26px;
     padding-bottom: 9px;
     font-size: unit(@font-size/@font-size-base, em);
@@ -46,6 +46,8 @@
 
 .article {
   @media (max-width: @layout-breakpoint-max) {
+    margin-bottom: 14px;
+
     img {
       margin-bottom: 12px;
     }

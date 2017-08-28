@@ -8,18 +8,20 @@ layout: default
             <h1>Interviews</h1>
         </header>
         {% include article/image-left-jumbo.html %}
-        <div class="row">
-            <div class="col-xs-4">
+        <div class="row article-spacer">
+            <div class="col-sm-4">
                 {% include article/stacked.html %}
             </div>
-            <div class="col-xs-4">
+            <div class="col-sm-4">
                 {% include article/stacked.html %}
             </div>
-            <div class="col-xs-4">
+            <div class="col-sm-4">
                 {% include article/stacked.html %}
             </div>
         </div>
-        {% include article/stacked-jumbo.html %}
+        <div class="article-spacer">
+            {% include article/stacked-jumbo.html %}
+        </div>
         {% include button-more.html %}
     </section>
 </main>
